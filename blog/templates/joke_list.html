@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block title %}Joke List{% endblock %}
+{% block content %}        
+        {% for joke_item in jokes_list %}  
+            <h1>Joke Title: {{joke_item.joke_title}}</h1>
+            <h3>Joke: {{joke_item.joke}}</h3>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        {% endfor %}
+            
+    </div>
+{% endblock %}
